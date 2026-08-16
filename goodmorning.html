@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Good Morning, Kalista ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            overflow: hidden;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Georgia, serif;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #ffb347,
+                    #ffcc70,
+                    #ffe6a7
+                );
+
+            color: #5a3215;
+        }
+
+        /* Matahari */
+
+        .sun {
+            position: absolute;
+
+            width: 150px;
+            height: 150px;
+
+            background: #fff3a3;
+
+            border-radius: 50%;
+
+            top: 8%;
+            right: 10%;
+
+            box-shadow:
+                0 0 30px #fff3a3,
+                0 0 80px #ffd56a,
+                0 0 130px rgba(255, 200, 70, .5);
+
+            animation: sun 4s ease-in-out infinite;
+        }
+
+        @keyframes sun {
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.08);
+            }
+        }
+
+        /* Awan */
+
+        .cloud {
+            position: absolute;
+
+            width: 180px;
+            height: 55px;
+
+            background: rgba(255,255,255,.75);
+
+            border-radius: 50px;
+        }
+
+        .cloud::before,
+        .cloud::after {
+            content: "";
+
+            position: absolute;
+
+            background: inherit;
+
+            border-radius: 50%;
+        }
+
+        .cloud::before {
+            width: 80px;
+            height: 80px;
+
+            left: 25px;
+            bottom: 15px;
+        }
+
+        .cloud::after {
+            width: 100px;
+            height: 100px;
+
+            right: 20px;
+            bottom: 10px;
+        }
+
+        .cloud1 {
+            top: 15%;
+            left: -30px;
+
+            animation: cloudMove 18s linear infinite;
+        }
+
+        .cloud2 {
+            top: 32%;
+            right: -200px;
+
+            transform: scale(.7);
+
+            animation: cloudMove2 25s linear infinite;
+        }
+
+        @keyframes cloudMove {
+            from {
+                transform: translateX(-200px);
+            }
+
+            to {
+                transform: translateX(120vw);
+            }
+        }
+
+        @keyframes cloudMove2 {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-130vw);
+            }
+        }
+
+        /* Kartu */
+
+        .card {
+            position: relative;
+            z-index: 10;
+
+            width: min(90%, 500px);
+
+            padding: 45px 30px;
+
+            text-align: center;
+
+            background: rgba(255,255,255,.45);
+
+            border: 1px solid rgba(255,255,255,.7);
+
+            border-radius: 30px;
+
+            backdrop-filter: blur(15px);
+
+            box-shadow:
+                0 20px 60px rgba(130,70,20,.25);
+
+            animation: cardIn 1.2s ease;
+        }
+
+        @keyframes cardIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Emoji */
+
+        .emoji {
+            font-size: 65px;
+
+            margin-bottom: 10px;
+
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%,100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        h1 {
+            font-size: clamp(32px, 8vw, 48px);
+
+            margin-bottom: 15px;
+
+            color: #8b4513;
+        }
+
+        .name {
+            font-size: 22px;
+
+            font-weight: bold;
+
+            color: #d35400;
+
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 17px;
+
+            line-height: 1.8;
+
+            color: #633b1d;
+        }
+
+        .heart {
+            margin-top: 25px;
+
+            font-size: 35px;
+
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%,100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.25);
+            }
+        }
+
+        .footer {
+            margin-top: 20px;
+
+            font-size: 13px;
+
+            color: rgba(90,50,21,.65);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Matahari -->
+
+    <div class="sun"></div>
+
+    <!-- Awan -->
+
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+
+    <!-- Isi -->
+
+    <div class="card">
+
+        <div class="emoji">
+            ☀️❤️
+        </div>
+
+        <h1>
+            Good Morning
+        </h1>
+
+        <div class="name">
+            Kalista Yunia Anggraini 💕
+        </div>
+
+        <div class="message">
+
+            Selamat pagi, sayang. 🌷
+
+            <br><br>
+
+            Semoga hari ini kamu bangun
+            dengan hati yang tenang dan
+            senyum yang indah.
+
+            <br><br>
+
+            Aku cuma ingin menjadi salah satu
+            alasan kecil kenapa harimu dimulai
+            dengan bahagia.
+
+            <br><br>
+
+            Jangan lupa sarapan, jaga kesehatan,
+            dan jangan terlalu memaksakan diri
+            hari ini ya.
+
+            <br><br>
+
+            <b>
+                Semoga hari ini sebaik dan
+                seindah senyummu. ☀️❤️
+            </b>
+
+            <br><br>
+
+            Aku sayang kamu. 💕
+
+        </div>
+
+        <div class="heart">
+            ❤️
+        </div>
+
+        <div class="footer">
+            Made with love for Kalista 🌷
+        </div>
+
+    </div>
+
+</body>
+</html>
