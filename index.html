@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Good Night, Kalista ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Georgia, serif;
+
+    background:
+        radial-gradient(circle at 50% 20%, #30205f, transparent 35%),
+        linear-gradient(
+            180deg,
+            #050014,
+            #11002b,
+            #21053d
+        );
+
+    color: white;
+}
+
+/* BINTANG */
+
+.stars {
+    position: fixed;
+    inset: 0;
+}
+
+.star {
+    position: absolute;
+
+    width: 3px;
+    height: 3px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+    from {
+        opacity: .2;
+        transform: scale(.6);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+
+/* BULAN */
+
+.moon {
+    position: absolute;
+
+    top: 8%;
+    right: 10%;
+
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    background: #fff5d6;
+
+    box-shadow:
+        0 0 30px #fff5d6,
+        0 0 80px rgba(255,235,180,.4);
+}
+
+.moon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    background: #050014;
+
+    top: -12px;
+    left: 30px;
+}
+
+/* KARTU */
+
+.card {
+    position: relative;
+
+    z-index: 5;
+
+    width: min(92%, 520px);
+
+    padding: 45px 30px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,.07);
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    border-radius: 30px;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.5);
+
+    animation: appear 1.3s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ICON */
+
+.icon {
+    font-size: 65px;
+
+    margin-bottom: 15px;
+
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+h1 {
+    font-size: clamp(35px, 9vw, 52px);
+
+    margin-bottom: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #ffc6e4,
+            #ffffff
+        );
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+}
+
+.name {
+    font-size: 20px;
+
+    color: #ffb9dc;
+
+    margin-bottom: 25px;
+
+    font-weight: bold;
+}
+
+.message {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #eadcf5;
+}
+
+.heart {
+    margin-top: 25px;
+
+    font-size: 35px;
+
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+}
+
+.footer {
+    margin-top: 20px;
+
+    font-size: 13px;
+
+    color: rgba(255,255,255,.5);
+}
+</style>
+</head>
+
+<body>
+
+<div class="stars">
+
+    <span class="star" style="top:8%;left:10%"></span>
+    <span class="star" style="top:15%;left:25%"></span>
+    <span class="star" style="top:28%;left:8%"></span>
+    <span class="star" style="top:35%;left:20%"></span>
+    <span class="star" style="top:12%;left:45%"></span>
+    <span class="star" style="top:25%;left:55%"></span>
+    <span class="star" style="top:42%;left:75%"></span>
+    <span class="star" style="top:18%;left:85%"></span>
+    <span class="star" style="top:60%;left:12%"></span>
+    <span class="star" style="top:70%;left:30%"></span>
+    <span class="star" style="top:55%;left:90%"></span>
+    <span class="star" style="top:80%;left:75%"></span>
+
+</div>
+
+<div class="moon"></div>
+
+<div class="card">
+
+    <div class="icon">
+        🌙❤️
+    </div>
+
+    <h1>
+        Good Night
+    </h1>
+
+    <div class="name">
+        Kalista Yunia Anggraini 💕
+    </div>
+
+    <div class="message">
+
+        Selamat malam, sayang. 🌙
+
+        <br><br>
+
+        Kalau hari ini terasa berat,
+        biarkan semuanya berhenti
+        sejenak malam ini.
+
+        <br><br>
+
+        Kamu sudah melakukan yang terbaik,
+        dan itu sudah cukup.
+
+        <br><br>
+
+        Pejamkan matamu, lepaskan
+        semua pikiran yang membuatmu lelah,
+        dan biarkan malam membawa kamu
+        menuju mimpi-mimpi yang indah.
+
+        <br><br>
+
+        <b>
+            Semoga tidurmu nyenyak,
+            mimpimu indah,
+            dan besok kamu bangun
+            dengan senyum yang lebih cantik. ✨
+        </b>
+
+        <br><br>
+
+        Selamat tidur, sayang.
+
+        <br>
+
+        <b>
+            Aku sayang kamu, Kalista. ❤️
+        </b>
+
+    </div>
+
+    <div class="heart">
+        ❤️
+    </div>
+
+    <div class="footer">
+        Made with love for Kalista 🌙
+    </div>
+
+</div>
+
+</body>
+</html>
